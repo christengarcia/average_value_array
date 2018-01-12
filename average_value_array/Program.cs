@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * C# Program to Find the Average Values of all the Array Elements
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
