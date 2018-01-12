@@ -7,7 +7,7 @@ namespace average_value_array
 {
     class Program
     {
-        public void sumAverageElements(int[] arr, int size)
+        public void SumAverageElements(int[] arr, int size)
         {
             int sum = 0;
             int average = 0;
@@ -21,9 +21,20 @@ namespace average_value_array
             Console.ReadLine();
         }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            
+            int size;
+            Console.WriteLine("Enter the Size : ");
+            size = Convert.ToInt32(Console.ReadLine());
+            int[] a = new int[size];
+            Console.WriteLine("Enter the Elements of the Array : ");
+            for (int i = 0; i < size; i++)
+            {
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int len = a.Length;
+            Program pg = new Program();
+            pg.SumAverageElements(a, len);
         }
     }
 }
